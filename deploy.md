@@ -203,3 +203,31 @@ sudo systemctl restart nginx
 we certbot
 
 Your CRM dashboard should now be live at `http://YOUR_SERVER_IP`.
+
+# Deployment Notes for Next.js + Prisma on DigitalOcean
+
+## 1. Install Node.js LTS
+```bash
+nvm install --lts
+
+Installs the latest Long Term Support (LTS) version of Node.js.
+
+2. Install Yarn Globally
+npm install -g yarn
+Installs Yarn as the package manager for the app.
+
+3. Update npm
+npm install -g npm@<VERSION>
+Prisma Setup & Usage
+
+The Next.js app connects to a PostgreSQL database using Prisma.
+
+After installing dependencies, generate the Prisma client:
+
+yarn prisma generate
+Deploy migrations:
+
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DBNAME" yarn prisma migrate deploy
+
+
+
