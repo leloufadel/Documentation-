@@ -150,9 +150,9 @@ sudo mysql
 Run:
 
 ```sql
-CREATE DATABASE crmprod;
+CREATE DATABASE crmdemo;
 CREATE USER 'crmadmin'@'localhost' IDENTIFIED BY 'StrongPasswordHere';
-GRANT ALL PRIVILEGES ON crmprod.* TO 'crmadmin'@'localhost';
+GRANT ALL PRIVILEGES ON crmpdemo.* TO 'crmadmin'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
