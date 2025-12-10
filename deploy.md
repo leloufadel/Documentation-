@@ -204,11 +204,11 @@ npm audit
 Apply safe automatic fixes:
 
 bash
-Copy code
-npm audit fix
+
+``` npm audit fix```
 Apply forced fixes (may cause breaking changes):
 
-npm audit fix --force
+```npm audit fix --force```
 Use this only after testing.
 
 Check outdated packages:
