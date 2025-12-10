@@ -208,20 +208,15 @@ Copy code
 npm audit fix
 Apply forced fixes (may cause breaking changes):
 
-bash
-Copy code
 npm audit fix --force
 Use this only after testing.
 
 Check outdated packages:
 
-bash
-Copy code
 npm outdated
 Update packages manually if needed:
 
-bash
-Copy code
+
 npm install <package>@latest
 
 Logs Management 
