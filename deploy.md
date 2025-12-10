@@ -198,7 +198,7 @@ sudo systemctl restart nginx
 ```
 
 ---
-Handling Vulnerabilities (npm / packages)
+# Handling Vulnerabilities (npm / packages)
 
 npm audit
 Apply safe automatic fixes:
