@@ -198,6 +198,38 @@ sudo systemctl restart nginx
 ```
 
 ---
+Handling Vulnerabilities (npm / packages)
+
+npm audit
+Apply safe automatic fixes:
+
+bash
+Copy code
+npm audit fix
+Apply forced fixes (may cause breaking changes):
+
+bash
+Copy code
+npm audit fix --force
+Use this only after testing.
+
+Check outdated packages:
+
+bash
+Copy code
+npm outdated
+Update packages manually if needed:
+
+bash
+Copy code
+npm install <package>@latest
+
+Logs Management 
+
+Using PM2
+pm2 logs project-name
+
+ pm2 logs project-name --err
 
 ## ✅ Done!
 we certbot
