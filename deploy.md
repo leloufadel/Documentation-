@@ -266,4 +266,7 @@ logs erreur database issues, machine address instead of localhost (replacement).
 
 we made: docker compose down; (to stop container)
          docker compose up ; to restart container
-
+ to watch logs :
+docker logs -f ac0... (id image)
+to restart mysql
+sudo systemctl restart mysql
