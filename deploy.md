@@ -256,5 +256,14 @@ Deploy migrations:
 
 DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DBNAME" yarn prisma migrate deploy
 
+"Docker";
 
+--------------------------------------
+draft 
+docker ps: to show containers that we run 
+docker logs id container; 
+logs erreur database issues, machine address instead of localhost (replacement).
+
+we made: docker compose down; (to stop container)
+         docker compose up ; to restart container
 
